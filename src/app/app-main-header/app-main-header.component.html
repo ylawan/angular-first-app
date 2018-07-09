@@ -1,0 +1,14 @@
+<div id="main-header">
+  <span>Menu</span>
+  <ul class="nav">
+    <li routerLink="home" routerLinkActive="active">Home</li>
+    <li routerLink="first" routerLinkActive="active">First</li>
+    <li routerLink="about" routerLinkActive="active">About</li>
+  </ul>
+
+  <ul class="nav" style="float: right;">
+    <li *ngIf="isSignedIn==false" routerLink="home">Sign In</li>
+    <li *ngIf="isSignedIn==true" routerLink="home">Sign Out</li>
+    <li *ngIf="isSignedIn==true" routerLink="home">Lawan...</li>
+  </ul>
+</div>

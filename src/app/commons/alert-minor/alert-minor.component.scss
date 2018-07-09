@@ -1,0 +1,21 @@
+#minor-alert {
+    width: 100%;
+    background: greenyellow;
+    -webkit-transition: height 500ms; /* For Safari 3.1 to 6.0 */
+    transition: height 500ms;
+    overflow: hidden;
+
+    &.show {
+        height: 100px;
+    }
+
+    &.hide {
+        height: 0;
+    }
+
+    .close{
+        float: right;
+        padding: 4px;
+        cursor: pointer;
+    }
+}

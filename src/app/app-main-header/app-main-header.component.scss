@@ -1,0 +1,29 @@
+#main-header {
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+    margin-top: 16px;
+    padding: 0 16px;
+
+    ul.nav {
+        margin: 0;
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            color: black;
+            padding: 12px;
+            cursor: pointer;
+        
+            &:hover {
+                background-color: gray;
+            }
+        }
+
+        li.active {
+            background-color: blue;
+            color: antiquewhite;
+        }
+
+    }
+}
