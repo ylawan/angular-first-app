@@ -12,7 +12,8 @@ import { AppMainFooterComponent } from './app-main-footer/app-main-footer.compon
 import { HttpClientModule } from '@angular/common/http';
 import { AlertMajorComponent } from './commons/alert-major/alert-major.component';
 import { AlertMinorComponent } from './commons/alert-minor/alert-minor.component';
-import { ModalDirective } from './commons/directives/modal.directive';
+import { OverlayDirective } from './commons/directives/overlay.directive';
+import { FeatureNotReadyComponent } from './commons/feature-not-ready/feature-not-ready.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ModalDirective } from './commons/directives/modal.directive';
     AppMainFooterComponent,
     AlertMajorComponent,
     AlertMinorComponent,
-    ModalDirective
+    OverlayDirective,
+    FeatureNotReadyComponent
   ],
   imports: [
     BrowserModule,

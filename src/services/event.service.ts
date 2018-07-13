@@ -4,6 +4,10 @@ import { Injectable, EventEmitter } from '@angular/core';
   providedIn: 'root'
 })
 export class EventService {
+  static get EVENTS(){
+    return CONSTANTS.EVENTS;
+  }
+
   private _events = {};
 
   constructor() { }
@@ -32,5 +36,14 @@ export class EventService {
     if(e){
       e.emit(eventData);
     }
+  }
+}
+
+const CONSTANTS = {
+  EVENTS:{
+    OPEN_MODAL: "open_modal::events",
+    CLOSE_MODAL: "close_modal::events",
+    MODAL_OPENED: "modal_opened::events",
+    MODAL_CLOSED: "modal_closed::events"
   }
 }

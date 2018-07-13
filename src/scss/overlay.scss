@@ -1,0 +1,33 @@
+.appOverlay {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    background-color: rgba(0,0,0,0.5);
+
+    & > .appOverlay-content {
+        cursor: default;
+        position: relative;
+
+        .close {
+            font-size: 28px;
+            position: absolute;
+            right: 1px;
+            cursor: pointer;
+        }
+
+        & > div {
+            border: solid 2px #6d6767;
+            @include borderRadius($border-radius-small);
+        }
+    }
+}

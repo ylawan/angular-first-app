@@ -15,10 +15,16 @@ export class AboutComponent implements OnInit {
   }
 
   TryMajorAlert(){
-    AlertService.ShowMajorAlert("*1* Lawan event triggered!");
+    AlertService.ShowMajorAlert("*1* OSI event triggered!");
+    this.eventService.emit(EventService.EVENTS.OPEN_MODAL, {id:'appFeatureNotReady'});
   }
 
   TryMinorAlert(){
-    AlertService.ShowMinorAlert("*2* Agbedor event triggered!");   
+    AlertService.ShowMinorAlert("*2* EMAKE event triggered!");
   }
+
+  TryModal(){
+    this.eventService.emit(EventService.EVENTS.OPEN_MODAL, {id:'appFeatureNotReady'});
+  }
+
 }

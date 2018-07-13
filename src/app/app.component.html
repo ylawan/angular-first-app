@@ -1,7 +1,12 @@
-<app-alert-major></app-alert-major>
-<app-main-header></app-main-header>
-<app-alert-minor></app-alert-minor>
-<div id='app-main-body'>
-<router-outlet></router-outlet>
+<div id="app-main-wrapper">
+    <app-alert-major></app-alert-major>
+    <app-main-header></app-main-header>
+    <app-alert-minor></app-alert-minor>
+    <div id='app-main-body'>
+    <router-outlet></router-outlet>
+    </div>
+    <app-main-footer></app-main-footer>
+
+    <!-- <appOverlay></appOverlay> -->
+    <app-feature-not-ready></app-feature-not-ready>
 </div>
-<app-main-footer></app-main-footer>

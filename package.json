@@ -5,11 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "buildlawan": "webpack",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prebuildlawan": "rd /S/Q dist"
+    "prebuildlawan1": "rd /S/Q dist > nul 2> nul 3> nul",
+    "buildlawan": "webpack",
+    "postbuildlawan1": ""
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
+    "mdi": "^2.2.43",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
@@ -44,6 +46,8 @@
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "mini-css-extract-plugin": "^0.4.1",
+    "optimize-css-assets-webpack-plugin": "^4.0.3",
     "protractor": "~5.3.0",
     "raw-loader": "^0.5.1",
     "rxjs-compat": "^6.2.1",
